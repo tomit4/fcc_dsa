@@ -5,7 +5,7 @@ const threeSum = (arr = [], target) => {
   arr.sort((a, b) => a - b);
   // custom... removes all elements larger than target value
   // easy because arr is now sorted
-  for (let i = arr.length; i > 0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] > target) {
       arr.pop();
     }
